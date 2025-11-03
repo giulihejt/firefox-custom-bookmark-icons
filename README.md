@@ -8,6 +8,10 @@
   <li>Auto-hide toolbar (shows on hover)</li>
 </ul>
 
+<a href="https://github.com/giulihejt/firefox-custom-bookmark-icons/releases/latest/download/userChrome.css">
+  <strong>⬇️ Download userChrome.css</strong>
+</a>
+
 <h2>Setup Instructions</h2>
 <ol>
   <li>In the Firefox address bar, go to:
@@ -74,4 +78,11 @@
   </li>
   
   <li>Save your changes to <code>userChrome.css</code> and restart Firefox to apply the changes!</li>
+</ol>
+</p>
+<p><em>Right-click → Save Link As if your browser tries to open it</em></p>
+
+<h3>Step 2: Install</h3>
+<ol>
+  <li>Enable custom stylesheets in Firefox...</li>
 </ol>
