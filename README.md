@@ -44,7 +44,7 @@
       </li>
     </ul>
   </li><br>
-  <li>Download or copy your <code>userChrome.css</code> file into the <code>chrome</code> folder. Your folder structure should look like this:<br>
+  <li>Download the attached <code>userChrome.css</code> file (or create your own) and copy it into the <code>chrome</code> folder. Your folder structure should look like this:<br>
   <pre><code>firefox-profile/
 └── chrome/
     ├── userChrome.css
@@ -56,8 +56,8 @@
   </li>
   <li>Update bookmark labels and URLs in the CSS to match your folder and icon names.<br>
     <ul>
-      <li>The <b>.bookmark-item</b> label should match the name of your bookmark folder.</li>
-      <li>The <b>list-style: url</b> path should lead to the icon image file you would like to pair with the bookmark.</li>
+      <li>The <code>.bookmark-item</code> label should match the name of your bookmark folder.</li>
+      <li>The <code>list-style: url</code> path should lead to the icon image file you would like to pair with the bookmark.</li>
       <li>The format should look like:</li>
     </ul>
     <pre><code>.bookmark-item[label=<strong>"Tools"</strong>] {  list-style: url("./icons/<strong>tools.svg</strong>") !important; }
