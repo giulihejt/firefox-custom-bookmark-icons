@@ -1,9 +1,11 @@
 <h1>Firefox Custom Bookmark Icons</h1>
-<p>A simple guide and userChrome.css template for customizing bookmark favicons in Firefox.</p>
+<p>A simple guide and userChrome.css template for customizing your Firefox bookmarks toolbar.</p>
 <ul>
-  <li>Customize your folder icons.</li>
-  <li>Replace missing or generic icons with custom images.</li>
-  <li>Remove or edit the text formatting for your bookmarks.</li>
+  <li>Add custom icons to bookmark folders</li>
+  <li>Show icons only or icons with text labels</li>
+  <li>Adjust icon sizes and spacing</li>
+  <li>Enable multi-row bookmarks toolbar</li>
+  <li>Auto-hide toolbar (shows on hover)</li>
 </ul>
 
 <h2>Setup Instructions</h2>
@@ -27,7 +29,7 @@
 └── icons/</code></pre>
   </li>
   
-  <li>Import your icon images into the <code>icons</code> folder.
+  <li>Import your icon images into the <code>icons</code> folder, if customizing icons.
     <ul>
       <li>Use clear, short names.</li>
       <li>Recommended icon sizes:
@@ -56,6 +58,9 @@
         ├── projects.png
         └── games.svg</code></pre>
   </li>
+
+  <li>Review the optional customizations in the file. To disable a style, either delete it or comment it out by wrapping it in <code>/* */</code>. Keep and modify the ones you want to apply.</li>
+  <br>
   
   <li>Update bookmark labels and URLs in the CSS to match your folder and icon names.
     <ul>
