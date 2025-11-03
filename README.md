@@ -40,7 +40,6 @@
         <ul>
           <li><strong>SVG</strong> - Best choice (scalable, sharp at any size, small file size).</li>
           <li><strong>PNG</strong> - Good for raster images (use 32x32px or larger, then let CSS scale down).</li>
-          <li><strong>ICO</strong> - Traditional favicon format (least commonly used/tested.)</li>
         </ul
       </li>
     </ul>
