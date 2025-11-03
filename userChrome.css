@@ -1,0 +1,117 @@
+/*
+ * Custom Firefox Bookmarks Toolbar
+ * Author: Giuliana Hejtmanek | GitHub: github.com/giulihejt/custom-firefox-bookmarks-toolbar
+ * License: MIT
+ */
+
+ 
+/*
+================================================================================
+📝 SETUP INSTRUCTIONS
+================================================================================
+
+1. Enable Custom Stylesheets:
+   - Go to about:config
+   - Search: toolkit.legacyUserProfileCustomizations.stylesheets
+   - Set to: true
+
+2. Locate Profile Folder:
+   - Go to about:support
+   - Find "Profile Folder" under Application Basics → Open Folder
+   - Path: %APPDATA%\Mozilla\Firefox\Profiles\[your-profile-folder]
+
+3. Create Folder Structure:
+   firefox-profile/
+   └── chrome/
+       ├── userChrome.css
+       └── icons/
+
+4. Add Icons to icons/ folder:
+   - Formats: SVG (best), PNG
+   - Sizes: 16x16 (standard), 32x32 (high-DPI), 64x64 (max)
+
+5. Review and customize the sections below:
+   - Delete or comment out unwanted styles
+   - Keep and modify the ones you want
+
+6. Update bookmark folder names and icon filenames to match yours
+
+7. Save userChrome.css and restart Firefox
+
+================================================================================
+*/
+
+
+/* ⚠️ REQUIRED: DO NOT REMOVE - Enables XUL namespace for Firefox UI styling */
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+/* Without this line above, your customizations will not work! */
+
+
+/*
+================================================================================
+🎨 CUSTOMIZATION SECTION - EDIT BELOW
+================================================================================
+*/
+
+/* ========================================
+   📏 SIZE & SPACING
+   ======================================== */
+/* Icon size: 16px (default), 20px (enlarged), 24px, 32px
+   Padding: Space inside bookmarks - try 2px 4px (compact) or 4px 6px (spacious)
+   Margin: Space between bookmarks - try 0 1px (tight) or 0 3px (wide) */
+
+.bookmark-item > .toolbarbutton-icon {
+  width: 16px !important;
+  height: 16px !important;
+}
+
+#PlacesToolbarItems > .bookmark-item {
+  padding: 3px 5px !important;
+  margin: 0 2px !important;
+}
+
+
+/* ========================================
+   🎨 OPTIONAL STYLES
+   ======================================== */
+/* Delete or comment out any styles you don't want to use */
+
+/* Hide bookmark text labels (icons only) */
+#PlacesToolbarItems > .bookmark-item > .toolbarbutton-text {
+  display: none !important;
+}
+
+/* Multi-row bookmarks toolbar */
+#PlacesToolbarItems {
+  display: flex !important;
+  flex-wrap: wrap !important;
+}
+
+/* Auto-hide toolbar (shows on hover) */
+#PersonalToolbar {
+  margin-top: -40px !important;
+  transition: margin-top 0.3s ease !important;
+}
+
+#navigator-toolbox:hover > #PersonalToolbar {
+  margin-top: 0 !important;
+}
+
+
+/* ========================================
+   📁 CUSTOM BOOKMARK FOLDER ICONS
+   ======================================== */
+/* Replace label="FolderName" with your folder name
+   Replace url("./icons/filename.svg") with your icon filename
+   Example: .bookmark-item[container="true"][label="Work"] { list-style: url("./icons/work.svg") !important; } */
+
+.bookmark-item[container="true"][label="F0"] { list-style: url("./icons/F0.svg") !important; }
+.bookmark-item[container="true"][label="F1"] { list-style: url("./icons/F1.svg") !important; }
+.bookmark-item[container="true"][label="F2"] { list-style: url("./icons/F2.svg") !important; }
+.bookmark-item[container="true"][label="F3"] { list-style: url("./icons/F3.svg") !important; }
+.bookmark-item[container="true"][label="F4"] { list-style: url("./icons/F4.svg") !important; }
+.bookmark-item[container="true"][label="F5"] { list-style: url("./icons/F5.svg") !important; }
+.bookmark-item[container="true"][label="F6"] { list-style: url("./icons/F6.svg") !important; }
+.bookmark-item[container="true"][label="F7"] { list-style: url("./icons/F7.svg") !important; }
+.bookmark-item[container="true"][label="F8"] { list-style: url("./icons/F8.svg") !important; }
+.bookmark-item[container="true"][label="F9"] { list-style: url("./icons/F9.svg") !important; }
