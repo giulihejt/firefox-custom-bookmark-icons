@@ -15,13 +15,15 @@ A simple guide and userChrome.css template for customizing your Firefox bookmark
 **[⬇️ Download White Minimal Icon Set](https://github.com/giulihejt/custom-firefox-bookmarks-toolbar/releases/download/v1.0.0/white-minimal-icon-set.zip)**
 
 <details>
-<summary><h3>Before & After</h3></summary>
-Before:
-   <img width="956" height="471" alt="image" src="https://github.com/user-attachments/assets/a247e701-e117-4631-8e2d-2b0c7ee214f6" />
+<summary><h3>Before/After Images</h3></summary>
+Before:<br>
+   <img width="950" height="471" alt="Bookmarks toolbar before." src="https://github.com/user-attachments/assets/a247e701-e117-4631-8e2d-2b0c7ee214f6" />
    
-After:
-   
+After (with labels):<br>
+   <img width="950" height="215" alt="Bookmarks toolbar after, with labels." src="https://github.com/user-attachments/assets/ed3391f3-306b-44a0-846c-1942d351d2d7" />
 
+After (without labels):<br>
+   <img width="950" height="176" alt="Bookmarks toolbar after, without labels." src="https://github.com/user-attachments/assets/d9669ded-bd62-4239-8e26-3030ed5cb65a" />
 </details>
 
 
